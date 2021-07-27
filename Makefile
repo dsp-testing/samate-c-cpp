@@ -5,16 +5,16 @@
 default: output-cpp-both
 
 # build all CPP test cases
-output-cpp-both: samate-cpp
-	python3 build_samate.py --language cpp --cases both --samate samate-cpp --output output-cpp-both
+output-cpp-both:
+	python3 build_samate.py --language cpp --cases both --samate C --output output-cpp-both
 
 # build all GOOD CPP test cases
-output-cpp-good: samate-cpp
-	python3 build_samate.py --language cpp --cases good --samate samate-cpp --output output-cpp-good
+output-cpp-good:
+	python3 build_samate.py --language cpp --cases good --samate C --output output-cpp-good
 
 # build all BAD CPP test cases
-output-cpp-bad: samate-cpp
-	python3 build_samate.py --language cpp --cases bad --samate samate-cpp --output output-cpp-bad
+output-cpp-bad:
+	python3 build_samate.py --language cpp --cases bad --samate C --output output-cpp-bad
 
 # build all Java test cases
 output-java-both: samate-java
@@ -28,15 +28,11 @@ output-java-good: samate-java
 output-java-bad: samate-java
 	python3 build_samate.py --language java --cases bad --samate samate-java --output output-java-bad
 
-# ensure that we have the SAMATE Juliet Test Suite for CPP
-samate-cpp:
-	rm -rf samate-cpp
-	git clone --depth 1 git@github.com:github/codeql-mirror-juliet-c-cpp.git samate-cpp
-
 # ensure that we have the SAMATE Juliet Test Suite for Java
 samate-java:
-	rm -rf samate-java
-	git clone --depth 1 git@github.com:github/codeql-mirror-juliet-java.git samate-java
+	$(error SAMATE Juliet Test Suite for Java is currently not supported!)
+	# rm -rf samate-java
+	# git clone --depth 1 git@github.com:github/codeql-mirror-juliet-java.git samate-java
 
 clean:
 	rm -rf output-*
