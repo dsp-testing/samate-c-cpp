@@ -25,7 +25,7 @@ Template File: sources-sink-83_bad.tmpl.cpp
 #endif
 
 #include <windows.h>
-#include <Winldap.h>
+#include <winldap.h>
 
 #pragma comment(lib, "wldap32")
 

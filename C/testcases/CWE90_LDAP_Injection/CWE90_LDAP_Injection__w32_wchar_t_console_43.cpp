@@ -17,7 +17,7 @@ Template File: sources-sink-43.tmpl.cpp
 #include "std_testcase.h"
 
 #include <windows.h>
-#include <Winldap.h>
+#include <winldap.h>
 
 #pragma comment(lib, "wldap32")
 

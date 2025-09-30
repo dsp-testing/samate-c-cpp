@@ -37,7 +37,7 @@ Template File: sources-sink-65a.tmpl.c
 #define TCP_PORT 27015
 #define IP_ADDRESS "127.0.0.1"
 
-#include <Winldap.h>
+#include <winldap.h>
 
 #pragma comment(lib, "wldap32")
 

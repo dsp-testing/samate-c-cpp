@@ -23,7 +23,7 @@ Template File: sources-sink-68b.tmpl.c
 #endif
 
 #include <windows.h>
-#include <Winldap.h>
+#include <winldap.h>
 
 #pragma comment(lib, "wldap32")
 

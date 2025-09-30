@@ -39,7 +39,7 @@ Template File: sources-sink-83_bad.tmpl.cpp
 #define TCP_PORT 27015
 #define IP_ADDRESS "127.0.0.1"
 
-#include <Winldap.h>
+#include <winldap.h>
 
 #pragma comment(lib, "wldap32")
 

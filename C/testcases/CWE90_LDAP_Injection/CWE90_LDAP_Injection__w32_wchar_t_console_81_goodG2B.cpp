@@ -19,7 +19,7 @@ Template File: sources-sink-81_goodG2B.tmpl.cpp
 #include "CWE90_LDAP_Injection__w32_wchar_t_console_81.h"
 
 #include <windows.h>
-#include <Winldap.h>
+#include <winldap.h>
 
 #pragma comment(lib, "wldap32")
 

@@ -37,7 +37,7 @@ Template File: sources-sink-33.tmpl.cpp
 #define TCP_PORT 27015
 #define LISTEN_BACKLOG 5
 
-#include <Winldap.h>
+#include <winldap.h>
 
 #pragma comment(lib, "wldap32")
 
