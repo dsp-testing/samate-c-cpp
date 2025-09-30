@@ -156,10 +156,10 @@ def find_all_testcases(args):
 
 	# regexp for files to build
 	if (args.language == "cpp"):
-		files_exp = "^CWE[0-9]+_.*\.(c|cpp)$" # find source files
+		files_exp = "^CWE[0-9]+_.*\\.(c|cpp)$" # find source files
 	elif (args.language == "java"):
 		#files_exp = "^CWE[0-9]+_.*\.java$"
-		files_exp = "build\.xml$" # find build files
+		files_exp = "build\\.xml$" # find build files
 	else:
 		raise Exception("Unknown language (find_all_testcases).")
 	files_regexp = re.compile(files_exp)
